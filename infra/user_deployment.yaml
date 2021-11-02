@@ -1,0 +1,21 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: udagram-api-user-depl
+  labels:
+    app: udagram-api-user-depl
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: udagram-api-user-depl
+  template:
+    metadata:
+      labels:
+        app: udagram-api-user-depl
+    spec:
+      containers:
+        - name: udagram-api-user
+          image: unicdev/udagram-api-user:v1
+          ports:
+            - containerPort: 80
