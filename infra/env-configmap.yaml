@@ -4,9 +4,8 @@ data:
   AWS_BUCKET: unicdev-481932773375-bucket
   AWS_PROFILE: default
   AWS_REGION: us-east-1
-  JWT_SECRET: smomondnkjbkjb
   POSTGRES_DB: udagramunicdev
-  POSTGRES_HOST: udagraxxxxx.chocxswmc6av.ca-central-1.rds.amazonaws.com
+  POSTGRES_HOST: ucdr1.cwhil3ijr85n.us-east-1.rds.amazonaws.com
   URL: http://localhost:8100
 metadata:
   name: env-config
