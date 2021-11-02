@@ -1,21 +1,21 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: udagram-frontend
+  name: udagram-reverseproxy
   labels:
-    app: udagram-frontend
+    app: udagram-reverseproxy
 spec:
   replicas: 1
   selector:
     matchLabels:
-      app: udagram-frontend
+      app: udagram-reverseproxy
   template:
     metadata:
       labels:
-        app: udagram-frontend
+        app: udagram-reverseproxy
     spec:
       containers:
-        - name: udagram-frontend
-          image: unicdev/udagram-frontend:v1
+        - name: udagram-reverseproxy
+          image: unicdev/udagram-reverseproxy:v1
           ports:
             - containerPort: 80
