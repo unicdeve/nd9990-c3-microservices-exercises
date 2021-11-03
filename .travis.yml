@@ -16,8 +16,8 @@ before_script:
 script:
   - docker build -t unicdev/udagram-api-user:v1 ./udagram-api-user
   - docker build -t unicdev/udagram-api-feed:v1 ./udagram-api-feed
-  - docker build -t unicdev/udagram-frontend:v1 ./udagram-frontend
-  - docker build -t unicdev/udagram-reverseproxy:v1 ./udagram-reverseproxy
+  - docker build -t unicdev/udagram-frontend:v7 ./udagram-frontend
+  - docker build -t unicdev/udagram-reverseproxy:v4 ./udagram-reverseproxy
 
 after_success:
   - echo "$DOCKER_PASSWORD" | docker login -u "$DOCKER_USERNAME"
