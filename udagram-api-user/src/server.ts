@@ -44,7 +44,7 @@ import { sequelize } from './sequelize';
 
 	// Start the Server
 	app.listen(port, () => {
-		console.log(`User-srv: server running ${config.url}`);
-		console.log(`User-srv: press CTRL+C to stop server`);
+		console.log(`User: server running ${config.url}`);
+		console.log(`User: press CTRL+C to stop server`);
 	});
 })();
