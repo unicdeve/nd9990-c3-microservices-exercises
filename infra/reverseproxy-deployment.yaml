@@ -16,6 +16,7 @@ spec:
     spec:
       containers:
         - name: udagram-reverseproxy
-          image: unicdev/udagram-reverseproxy:v1
+          image: unicdev/udagram-reverseproxy:v4
+          imagePullPolicy: Always
           ports:
-            - containerPort: 80
+            - containerPort: 8080

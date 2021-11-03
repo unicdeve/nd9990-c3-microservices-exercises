@@ -1,12 +1,12 @@
 apiVersion: v1
 kind: Service
 metadata:
-  name: udagram-api-feed
-  labels:
-    run: udagram-api-feed
+  name: backend-feed
 spec:
   ports:
-    - port: 80
+    - name: '8080'
       protocol: TCP
+      port: 8080
+      targetPort: 8080
   selector:
-    run: udagram-api-feed
+    app: backend-feed
