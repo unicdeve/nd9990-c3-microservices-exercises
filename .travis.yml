@@ -24,5 +24,5 @@ after_success:
     --password-stdin
   - docker push unicdev/udagram-api-user:v1
   - docker push unicdev/udagram-api-feed:v1
-  - docker push unicdev/udagram-frontend:v1
-  - docker push unicdev/udagram-reverseproxy:v1
+  - docker push unicdev/udagram-frontend:v7
+  - docker push unicdev/udagram-reverseproxy:v4
