@@ -23,8 +23,8 @@ spec:
             httpGet:
               path: /api/v0/feed
               port: 8080
-            initialDelaySeconds: 3
-            periodSeconds: 3
+            initialDelaySeconds: 20
+            periodSeconds: 10
           env:
             - name: AWS_BUCKET
               valueFrom:
