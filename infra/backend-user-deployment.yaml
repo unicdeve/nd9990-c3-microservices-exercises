@@ -5,7 +5,7 @@ metadata:
   labels:
     app: backend-user
 spec:
-  replicas: 1
+  replicas: 2
   selector:
     matchLabels:
       app: backend-user
@@ -19,6 +19,13 @@ spec:
           image: unicdev/udagram-api-user:v1
           ports:
             - containerPort: 8080
+          resources:
+            requests:
+              memory: '64Mi'
+              cpu: '250m'
+            limits:
+              memory: '1024Mi'
+              cpu: '500m'
           env:
             - name: AWS_BUCKET
               valueFrom:
