@@ -1,0 +1,12 @@
+*~
+*.sw[mnpcod]
+*.log
+*.tmp
+*.tmp.*
+log.txt
+$RECYCLE.BIN/
+
+.DS_Store
+
+set_env.sh
+infra/secrets/
